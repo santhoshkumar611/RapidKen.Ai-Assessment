@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom Inline Styles for Quick Polishing */
+
+        /* Typography */
+        h1, h2 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Content Section Styling */
+        #content {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #welcome-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #welcome-section ul li:before {
+            content: "✔";
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+        /* Button Styling */
+        a {
+            text-decoration: none;
+        }
+
+        #content a {
+            color: #fff;
+            background: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        #content a:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" style="color: white; text-decoration: none;">
+            <div class="logo">RapidKen.AI</div>
+        </a>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by employee name">
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+            <ul id="nav-menu">
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="listing.html"> Listing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Section -->
+    <div id="content">
+        <section id="welcome-section">
+            <h1>Welcome to the Ultimate Employee Management System 🌟</h1>
+            <p>
+                Effortlessly manage your organization's employee records with our advanced, yet intuitive application. Whether you're onboarding new team members or keeping track of your existing workforce, this system offers a seamless and efficient experience tailored to meet all your HR needs.
+            </p>
+            <h2>Why Choose This System?</h2>
+            <ul>
+                <li><strong>Simplicity Meets Functionality:</strong> A sleek design paired with powerful tools ensures an effortless workflow.</li>
+                <li><strong>Centralized Data Management:</strong> From registration to records viewing, everything you need is just a click away.</li>
+                <li><strong>Enhanced Productivity:</strong> Streamlined features like search, pagination, and editing save you time and effort.</li>
+            </ul>
+            <h2>Explore the Features</h2>
+            <ul>
+                <li><strong>Employee Registration:</strong> Quickly add new employees with comprehensive details and intuitive forms.</li>
+                <li><strong>Employee Listing:</strong> Browse all records in an organized table, complete with search, pagination, and delete options.</li>
+                <li><strong>Responsive Design:</strong> Accessible on any device, making it easy to manage your workforce on the go.</li>
+            </ul>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="registration.html">Get Started 🚀</a>
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Santhosh Kumar S. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

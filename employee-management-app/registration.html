@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" style="color: aliceblue;"><div class="logo"> RapidKen.AI</div></a>
+    
+        <nav>
+            <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+            <ul id="nav-menu">
+                <li><a href="registration.html"> Registration</a></li>
+                <li><a href="listing.html"> Listing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <div id="content">
+        <h2>Register Employee</h2>
+        <form id="employee-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Enter employee name">
+
+            <label for="position">Position</label>
+            <input type="text" id="position" required placeholder="Enter employee position">
+
+            <label for="about">About</label>
+            <textarea id="about" required placeholder="Enter a brief description of the employee"></textarea>
+
+            <label for="joining-date">Joining Date</label>
+            <input type="date" id="joining-date" required>
+
+            <button type="submit">Register Employee</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Santhosh Kumar S. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Listing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" style="color: aliceblue;"><div class="logo"> RapidKen.AI</div></a>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by employee name">
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+            <ul id="nav-menu">
+                <li><a href="registration.html"> Registration</a></li>
+                <li><a href="listing.html"> Listing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Employee Listing -->
+    <div id="content"  class="table-responsive">
+        <h2>Employee Listing</h2>
+        <table id="employee-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>About</th>
+                    <th>Joining Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be inserted by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination">
+            <button onclick="prevPage()">Prev</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Santhosh Kumar S. All rights reserved.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
